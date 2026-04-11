@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Painter in Kanata &amp; Ottawa | Flutter Face Paint</title>
+  <meta name="description" content="Professional face painting for birthday parties, corporate events &amp; festivals in Kanata, Ottawa, Stittsville, Nepean &amp; surrounding areas. Book Maryam today.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Open Graph -->
+  <meta property="og:title" content="Face Painter in Kanata &amp; Ottawa | Flutter Face Paint">
+  <meta property="og:description" content="Professional face painting for birthday parties, corporate events &amp; festivals in Kanata, Ottawa, Stittsville, Nepean &amp; surrounding areas.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flutterfacepaint.com/">
+  <meta property="og:image" content="https://flutterfacepaint.com/og-image.jpg">
+  <!-- LocalBusiness Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Flutter Face Paint",
+    "description": "Professional face painting for birthday parties, corporate events and festivals in Kanata, Ottawa and surrounding areas.",
+    "url": "https://flutterfacepaint.com",
+    "telephone": "514-817-0253",
+    "email": "FitzgeraldMaryam@gmail.com",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Kanata",
+      "addressRegion": "ON",
+      "addressCountry": "CA"
+    },
+    "areaServed": ["Kanata","Ottawa","Stittsville","Nepean","Barrhaven","Carleton Place","Arnprior"],
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+<body>
+
+<!-- ── Navbar ── -->
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo" aria-label="Flutter Face Paint home">🦋 Flutter Face Paint</a>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html" class="active" aria-current="page">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="book.html" class="navbar__cta">Book Now</a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__drawer" id="mobile-drawer" role="menu">
+    <a href="index.html" class="active" role="menuitem">Home</a>
+    <a href="about.html" role="menuitem">About</a>
+    <a href="gallery.html" role="menuitem">Gallery</a>
+    <a href="services.html" role="menuitem">Services</a>
+    <a href="reviews.html" role="menuitem">Reviews</a>
+    <a href="faq.html" role="menuitem">FAQ</a>
+    <a href="book.html" class="drawer-cta" role="menuitem">Book Now</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ── Hero ── -->
+<section class="hero" aria-label="Hero">
+  <div class="container">
+    <div class="two-col">
+      <div>
+        <p class="eyebrow">Kanata's Favourite Face Painter</p>
+        <h1 style="margin: 0.5rem 0 1rem;">Bringing Magic to<br>Every Event</h1>
+        <p style="color: var(--muted); font-size: 1.05rem; margin-bottom: 1.5rem; max-width: 52ch;">
+          Professional face painting for birthday parties, corporate events, festivals and more — serving Kanata, Ottawa, and surrounding areas.
+        </p>
+        <div class="hero__social-proof" style="background: rgba(124,58,237,0.08); border-color: rgba(124,58,237,0.2); color: var(--violet); margin-bottom: 2rem; display: inline-flex;">
+          ⭐⭐⭐⭐⭐&nbsp; Trusted by 100+ Ottawa families
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 0.75rem; align-items: flex-start;">
+          <a href="book.html" class="btn btn--violet btn--lg">Book Your Event</a>
+          <a href="#gallery" style="color: var(--muted); font-size: 0.9rem; padding-left: 0.5rem;">or browse my work ↓</a>
+        </div>
+      </div>
+      <div style="display: flex; justify-content: center; align-items: center;">
+        <div style="width: 100%; max-width: 460px; border-radius: 24px 24px 24px 8px; overflow: hidden; box-shadow: 0 20px 60px rgba(124,58,237,0.2);">
+          <img src="images/butterfly.png" alt="Girl with a vibrant butterfly face paint by Flutter Face Paint in Kanata" style="width: 100%; height: 480px; object-fit: cover; object-position: top; display: block;" loading="eager">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Trust Bar ── -->
+<div class="trust-bar" role="complementary" aria-label="Trust indicators">
+  <div class="container">
+    <div class="trust-bar__grid">
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon-wrap" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><path d="M9 9h.01"/><path d="M15 9h.01"/><path d="M8 9c0-1 .5-2 1.5-2.5"/><path d="M16 9c0-1-.5-2-1.5-2.5"/></svg>
+        </div>
+        <span>Vibrant &amp; Creative Designs</span>
+      </div>
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon-wrap" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><polyline points="9 12 11 14 15 10"/></svg>
+        </div>
+        <span>Safe, Hypoallergenic Paints</span>
+      </div>
+      <div class="trust-bar__item">
+        <div class="trust-bar__icon-wrap" aria-hidden="true">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+        </div>
+        <span>Loves Working with Kids</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── Gallery Preview ── -->
+<section class="section section--white" id="gallery">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Portfolio</p>
+      <h2>Designs That Delight Every Child</h2>
+    </div>
+    <div class="gallery-preview-grid">
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/butterfly.png" alt="Butterfly face paint on a child by Flutter Face Paint in Kanata" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Butterfly</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/tiger.png" alt="Tiger face paint by Maryam Fitzgerald, face painter in Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Tiger</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/giraffe.jpg" alt="Giraffe face paint design by Flutter Face Paint" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy">
+          <div class="label">Giraffe</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/dragon.png" alt="Dragon face paint design — Flutter Face Paint, Kanata" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Dragon</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/artist-at-work.jpg" alt="Maryam painting a child's face at a birthday party in Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Artist at Work</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/batman.png" alt="Batman superhero face paint by Flutter Face Paint in Kanata" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Batman</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/dog.png" alt="Dalmatian puppy face paint on a toddler — Flutter Face Paint" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Puppy</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/festival-face-paint.jpg" alt="Face painting at an outdoor festival in the Ottawa area" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Festival Fun</div>
+        </div>
+      </div>
+      <div class="gallery-preview-item">
+        <div class="thumb">
+          <img src="images/princess.jpg" alt="Princess face paint design by Maryam — Flutter Face Paint, Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
+          <div class="label">Princess</div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 2.5rem;">
+      <a href="gallery.html" class="btn btn--outline">View Full Gallery →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Services ── -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">What We Offer</p>
+      <h2>Our Services</h2>
+    </div>
+    <div class="services-grid">
+      <a href="birthday-parties.html" class="service-card" style="text-decoration: none; color: inherit;">
+        <div class="service-card__icon">🎂</div>
+        <div class="service-card__title">Birthday Parties</div>
+        <p class="service-card__desc">Make your child's birthday unforgettable with custom face painting for every guest. Kanata and Ottawa's most-loved birthday entertainer.</p>
+        <span class="service-card__link">Learn More →</span>
+      </a>
+      <a href="corporate-events.html" class="service-card" style="text-decoration: none; color: inherit;">
+        <div class="service-card__icon">🏢</div>
+        <div class="service-card__title">Corporate Events</div>
+        <p class="service-card__desc">Branded, professional face painting for company picnics, product launches, and team events across the Ottawa region.</p>
+        <span class="service-card__link">Learn More →</span>
+      </a>
+      <a href="services.html" class="service-card" style="text-decoration: none; color: inherit;">
+        <div class="service-card__icon">🏫</div>
+        <div class="service-card__title">School &amp; Community</div>
+        <p class="service-card__desc">From school fairs to charity fundraisers — colourful, safe, and fast face painting for large groups of all ages.</p>
+        <span class="service-card__link">Learn More →</span>
+      </a>
+      <a href="services.html" class="service-card" style="text-decoration: none; color: inherit;">
+        <div class="service-card__icon">🎪</div>
+        <div class="service-card__title">Festivals &amp; Fairs</div>
+        <p class="service-card__desc">High-volume face painting for outdoor festivals and fairs. Experienced with large crowds and long-day events.</p>
+        <span class="service-card__link">Learn More →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ── How It Works ── -->
+<section class="section section--bg">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Simple Process</p>
+      <h2>How It Works</h2>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="step__number">1</div>
+        <div class="step__title">Submit the Booking Form</div>
+        <p class="step__desc">Tell us about your event — takes less than 2 minutes.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">2</div>
+        <div class="step__title">Receive Your Quote</div>
+        <p class="step__desc">Maryam will reply within 24 hours with availability and pricing.</p>
+      </div>
+      <div class="step">
+        <div class="step__number">3</div>
+        <div class="step__title">We Show Up &amp; Create Magic</div>
+        <p class="step__desc">Sit back and watch the smiles. We handle everything.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 3rem;">
+      <a href="book.html" class="btn btn--violet btn--lg">Book Your Event</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Safety ── -->
+<section class="section section--white">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Child Safety</p>
+      <h2>Safe for Every Child</h2>
+      <p>Every product we use is professionally tested and approved for sensitive skin.</p>
+    </div>
+    <ul class="safety-list" role="list" aria-label="Safety practices">
+      <li class="safety-list__item">FDA-approved, professional-grade face paints</li>
+      <li class="safety-list__item">Fresh sponge used per child — always</li>
+      <li class="safety-list__item">Hypoallergenic formulas safe for sensitive skin</li>
+      <li class="safety-list__item">Children who appear unwell are never painted</li>
+      <li class="safety-list__item">Full sanitation kit on-site at every event</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ── Urgency Bar ── -->
+<div class="urgency-bar" role="alert">
+  🗓️ Summer 2025 dates are filling fast — book early to secure yours.
+</div>
+
+<!-- ── Reviews Highlight ── -->
+<section class="section section--bg">
+  <div class="container">
+    <div class="section__header">
+      <p class="eyebrow">Client Love</p>
+      <h2>What Ottawa Families Are Saying</h2>
+    </div>
+    <div class="reviews-grid" style="max-width: 900px; margin: 0 auto;">
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar" aria-hidden="true">SM</div>
+          <div class="review-card__meta">
+            <div class="review-card__name">Sarah M.</div>
+            <span class="review-card__badge">Birthday Party · Kanata</span>
+          </div>
+        </div>
+        <div class="review-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-card__text">Maryam was absolutely amazing at my daughter's 6th birthday party. Every single child left with the biggest smile on their face. We will 100% be booking her again next year!</p>
+      </div>
+      <div class="review-card">
+        <div class="review-card__header">
+          <div class="review-card__avatar" aria-hidden="true">JK</div>
+          <div class="review-card__meta">
+            <div class="review-card__name">Jennifer K.</div>
+            <span class="review-card__badge">Birthday Party · Barrhaven</span>
+          </div>
+        </div>
+        <div class="review-card__stars" aria-label="5 stars">⭐⭐⭐⭐⭐</div>
+        <p class="review-card__text">The kids were in awe of Maryam's talent. She was so patient and kind with even the shyest children. The designs were stunning — far better than anything I've seen at other parties.</p>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top: 2rem;">
+      <a href="reviews.html" class="text-link">See All Reviews →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── Areas Served ── -->
+<div class="areas-served">
+  <div class="container">
+    <p>Flutter Face Paint proudly serves <strong>Kanata, Ottawa, Stittsville, Nepean, Barrhaven, Carleton Place, Almonte, Arnprior, Carp, Richmond,</strong> and surrounding areas.</p>
+  </div>
+</div>
+
+<!-- ── CTA Banner ── -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="container">
+    <h2>Ready to make your event unforgettable?</h2>
+    <a href="book.html" class="btn btn--white btn--lg">Book Maryam</a>
+  </div>
+</section>
+
+</main>
+
+<!-- ── Footer ── -->
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">🦋 Flutter Face Paint</div>
+        <p class="footer__tagline">Bringing Magic to Every Event</p>
+        <p style="font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 1.25rem; max-width: 28ch;">Professional face painting across Kanata, Ottawa, and surrounding areas.</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/flutterfacepaint" class="footer__social-btn" aria-label="Flutter Face Paint on Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+          <a href="https://facebook.com/flutterfacepaint" class="footer__social-btn" aria-label="Flutter Face Paint on Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+        </div>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <nav class="footer__links" aria-label="Services navigation">
+          <a href="birthday-parties.html">Birthday Parties</a>
+          <a href="corporate-events.html">Corporate Events</a>
+          <a href="services.html">School &amp; Community</a>
+          <a href="services.html">Festivals &amp; Fairs</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="book.html">Book Now</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <nav class="footer__links" aria-label="Company navigation">
+          <a href="about.html">About Maryam</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="faq.html">FAQ</a>
+          <a href="index.html">Home</a>
+        </nav>
+        <h4 style="margin-top: 1.5rem;">Contact</h4>
+        <p class="footer__contact-item">📧 <a href="mailto:FitzgeraldMaryam@gmail.com">FitzgeraldMaryam@gmail.com</a></p>
+        <p class="footer__contact-item">📞 <a href="tel:5148170253">514-817-0253</a></p>
+      </div>
+      <div>
+        <h4>Areas Served</h4>
+        <p style="font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.8;">
+          Kanata · Ottawa · Stittsville<br>
+          Nepean · Barrhaven<br>
+          Carleton Place · Almonte<br>
+          Arnprior · Carp · Richmond<br>
+          <span style="color: rgba(255,255,255,0.4); font-size: 0.82rem;">and surrounding areas</span>
+        </p>
+        <a href="book.html" class="btn btn--coral" style="margin-top: 1.5rem; padding: 0.65rem 1.5rem; font-size: 0.88rem;">Book Your Event →</a>
+      </div>
+    </div>
+    <div class="footer__bottom" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 0.5rem;">
+      <span>© 2025 Flutter Face Paint · Maryam Fitzgerald · Kanata, ON</span>
+      <span style="color: rgba(255,255,255,0.3); font-size: 0.78rem;">All rights reserved.</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger menu
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const drawer = document.querySelector('.navbar__drawer');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!open));
+    drawer.classList.toggle('open', !open);
+  });
+</script>
+</body>
+</html>

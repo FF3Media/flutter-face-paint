@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Face Painter in Ottawa &amp; Kanata | Flutter Face Paint</title>
+  <meta name="description" content="Book Maryam Fitzgerald for your next event — birthday parties, corporate events, festivals and more across Kanata, Ottawa and surrounding areas.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <meta property="og:title" content="Book a Face Painter in Ottawa &amp; Kanata | Flutter Face Paint">
+  <meta property="og:description" content="Book Maryam Fitzgerald for your next event — birthday parties, corporate events, festivals and more.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flutterfacepaint.com/book.html">
+  <meta property="og:image" content="https://flutterfacepaint.com/og-image.jpg">
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="index.html" class="navbar__logo">🦋 Flutter Face Paint</a>
+    <ul class="navbar__links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reviews.html">Reviews</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="book.html" class="navbar__cta active" aria-current="page">Book Now</a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__drawer" id="mobile-drawer" role="menu">
+    <a href="index.html" role="menuitem">Home</a>
+    <a href="about.html" role="menuitem">About</a>
+    <a href="gallery.html" role="menuitem">Gallery</a>
+    <a href="services.html" role="menuitem">Services</a>
+    <a href="reviews.html" role="menuitem">Reviews</a>
+    <a href="faq.html" role="menuitem">FAQ</a>
+    <a href="book.html" class="drawer-cta" role="menuitem">Book Now</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ── Hero ── -->
+<section class="section section--white" style="padding-top: 4rem; padding-bottom: 2rem; text-align: center;">
+  <div class="container">
+    <p class="eyebrow">Let's Make Magic</p>
+    <h1 style="margin: 0.5rem 0 1rem;">Book Maryam for Your Event</h1>
+    <p style="color: var(--muted); max-width: 54ch; margin: 0 auto 1rem;">Ready to add magic to your next event? Fill out the form below and Maryam will get back to you within 24 hours. Serving Kanata, Ottawa, and surrounding areas.</p>
+    <div class="urgency-bar" style="border-radius: var(--radius-pill); display: inline-block; padding: 0.5rem 1.25rem; font-size: 0.88rem; margin-top: 0.5rem;">
+      🗓️ Summer 2025 dates are filling fast — don't wait!
+    </div>
+  </div>
+</section>
+
+<!-- ── Booking Form ── -->
+<section class="section section--bg" style="padding-top: 1.5rem;">
+  <div class="container">
+
+    <div class="form-wrapper" id="form-wrapper">
+
+      <!-- Progress indicator -->
+      <div class="form-progress" role="progressbar" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1" aria-label="Booking form progress">
+        <div class="form-progress__step active" id="progress-step-1">
+          <span class="form-progress__num">1</span>
+          <span>Event Basics</span>
+        </div>
+        <div class="form-progress__line"></div>
+        <div class="form-progress__step" id="progress-step-2">
+          <span class="form-progress__num">2</span>
+          <span>Event Details</span>
+        </div>
+      </div>
+
+      <form id="booking-form" novalidate>
+
+        <!-- ── Step 1 ── -->
+        <div class="form-step active" id="step-1">
+          <div class="form-step__label">Step 1 of 2 — Your Event Basics</div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="full_name">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="full_name" name="full_name" autocomplete="name" required placeholder="Jane Smith">
+              <span class="field__error" id="full_name-error" role="alert">Please enter your full name.</span>
+            </div>
+            <div class="field">
+              <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+              <span class="field__error" id="email-error" role="alert">Please enter a valid email address.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="613-555-0123">
+              <span class="field__error" id="phone-error" role="alert">Please enter your phone number.</span>
+            </div>
+            <div class="field">
+              <label for="event_type">Type of Event <span class="req" aria-hidden="true">*</span></label>
+              <select id="event_type" name="event_type" required>
+                <option value="" disabled selected>Select event type…</option>
+                <option value="birthday">Birthday Party</option>
+                <option value="corporate">Corporate Event</option>
+                <option value="school">School or Community Event</option>
+                <option value="festival">Festival or Fair</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="field__error" id="event_type-error" role="alert">Please select an event type.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="event_date">Event Date <span class="req" aria-hidden="true">*</span></label>
+              <input type="date" id="event_date" name="event_date" required>
+              <span class="field__error" id="event_date-error" role="alert">Please select your event date.</span>
+            </div>
+            <div class="field">
+              <label for="num_children">Estimated Number of Children <span class="req" aria-hidden="true">*</span></label>
+              <input type="number" id="num_children" name="num_children" min="1" max="500" required placeholder="e.g. 20">
+              <span class="field__error" id="num_children-error" role="alert">Please enter the number of children.</span>
+            </div>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--violet btn--full" id="next-btn">Next Step →</button>
+          </div>
+        </div>
+
+        <!-- ── Step 2 ── -->
+        <div class="form-step" id="step-2">
+          <div class="form-step__label">Step 2 of 2 — Event Details</div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="start_time">Event Start Time <span class="req" aria-hidden="true">*</span></label>
+              <input type="time" id="start_time" name="start_time" required>
+              <span class="field__error" id="start_time-error" role="alert">Please enter the event start time.</span>
+            </div>
+            <div class="field">
+              <label for="duration">Estimated Duration</label>
+              <select id="duration" name="duration">
+                <option value="" disabled selected>Select duration…</option>
+                <option value="1h">1 hour</option>
+                <option value="1.5h">1.5 hours</option>
+                <option value="2h">2 hours</option>
+                <option value="3h">3 hours</option>
+                <option value="4h+">4+ hours</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="event_address">Full Event Address <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="event_address" name="event_address" autocomplete="street-address" required placeholder="123 Main St, Kanata, ON">
+            <span class="field__error" id="event_address-error" role="alert">Please enter the event address.</span>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="age_range">Age Range of Children</label>
+              <select id="age_range" name="age_range">
+                <option value="" disabled selected>Select age range…</option>
+                <option value="under3">Under 3 years</option>
+                <option value="3-6">3–6 years</option>
+                <option value="6-12">6–12 years</option>
+                <option value="mixed">Mixed ages</option>
+                <option value="adults">Adults welcome too</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="referral">How did you hear about us?</label>
+              <select id="referral" name="referral">
+                <option value="" disabled selected>Select…</option>
+                <option value="google">Google Search</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="referral">Friend or Family Referral</option>
+                <option value="returning">Returning Client</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="special_requests">Event Theme or Special Requests</label>
+            <textarea id="special_requests" name="special_requests" placeholder="e.g. Frozen theme, princess designs, specific characters, brand colours for corporate event…"></textarea>
+          </div>
+
+          <div class="form-nav">
+            <button type="button" class="btn btn--outline" id="back-btn" style="flex: 0 0 auto;">← Back</button>
+            <button type="submit" class="btn btn--violet btn--full">Send My Booking Request →</button>
+          </div>
+        </div>
+
+      </form>
+
+      <!-- Success state -->
+      <div class="form-success" id="form-success" role="alert" aria-live="polite">
+        <div class="emoji">🦋</div>
+        <h3>Thank You!</h3>
+        <p>Maryam will be in touch within 24 hours to confirm your booking details.</p>
+        <a href="index.html" class="btn btn--white" style="margin-top: 1.5rem;">Back to Home</a>
+      </div>
+
+    </div>
+
+    <!-- Direct contact -->
+    <div class="direct-contact">
+      Prefer to reach out directly?
+      <a href="mailto:FitzgeraldMaryam@gmail.com">FitzgeraldMaryam@gmail.com</a>
+      &nbsp;or&nbsp;
+      <a href="tel:5148170253">514-817-0253</a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">🦋 Flutter Face Paint</div>
+        <p class="footer__tagline">Bringing Magic to Every Event</p>
+        <div class="footer__socials">
+          <a href="https://instagram.com/flutterfacepaint" class="footer__social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
+          <a href="https://facebook.com/flutterfacepaint" class="footer__social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
+        </div>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About Maryam</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="services.html">Services</a>
+          <a href="birthday-parties.html">Birthday Parties</a>
+          <a href="corporate-events.html">Corporate Events</a>
+          <a href="reviews.html">Reviews</a>
+          <a href="faq.html">FAQ</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="footer__contact-item">📧 <a href="mailto:FitzgeraldMaryam@gmail.com">FitzgeraldMaryam@gmail.com</a></p>
+        <p class="footer__contact-item">📞 <a href="tel:5148170253">514-817-0253</a></p>
+        <p class="footer__contact-item">🌐 <a href="https://flutterfacepaint.com">flutterfacepaint.com</a></p>
+      </div>
+    </div>
+    <p class="footer__areas">Flutter Face Paint proudly serves Kanata, Ottawa, Stittsville, Nepean, Barrhaven, Carleton Place, Almonte, Arnprior, Carp, Richmond, and surrounding areas.</p>
+    <div class="footer__bottom">© 2025 Flutter Face Paint. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  // Hamburger
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const drawer = document.querySelector('.navbar__drawer');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!open));
+    drawer.classList.toggle('open', !open);
+  });
+
+  // Set min date to today
+  const dateInput = document.getElementById('event_date');
+  dateInput.min = new Date().toISOString().split('T')[0];
+
+  // Step management
+  const step1 = document.getElementById('step-1');
+  const step2 = document.getElementById('step-2');
+  const progressStep1 = document.getElementById('progress-step-1');
+  const progressStep2 = document.getElementById('progress-step-2');
+  const progressBar = document.querySelector('[role="progressbar"]');
+
+  function showStep(n) {
+    step1.classList.toggle('active', n === 1);
+    step2.classList.toggle('active', n === 2);
+    progressStep1.classList.toggle('active', n === 1);
+    progressStep1.classList.toggle('done', n === 2);
+    progressStep2.classList.toggle('active', n === 2);
+    progressBar.setAttribute('aria-valuenow', n);
+    window.scrollTo({ top: document.querySelector('.form-wrapper').offsetTop - 100, behavior: 'smooth' });
+  }
+
+  // Field validation helpers
+  function validateField(input) {
+    const errorEl = document.getElementById(input.id + '-error');
+    if (!errorEl) return true;
+    const valid = input.checkValidity();
+    input.classList.toggle('error', !valid);
+    errorEl.classList.toggle('visible', !valid);
+    return valid;
+  }
+
+  function validateStep1() {
+    const fields = ['full_name', 'email', 'phone', 'event_type', 'event_date', 'num_children'];
+    return fields.map(id => validateField(document.getElementById(id))).every(Boolean);
+  }
+
+  function validateStep2() {
+    const fields = ['start_time', 'event_address'];
+    return fields.map(id => validateField(document.getElementById(id))).every(Boolean);
+  }
+
+  // Blur validation
+  document.querySelectorAll('input[required], select[required]').forEach(input => {
+    input.addEventListener('blur', () => validateField(input));
+    input.addEventListener('input', () => {
+      if (input.classList.contains('error')) validateField(input);
+    });
+  });
+
+  // Next button
+  document.getElementById('next-btn').addEventListener('click', () => {
+    if (validateStep1()) showStep(2);
+  });
+
+  // Back button
+  document.getElementById('back-btn').addEventListener('click', () => showStep(1));
+
+  // Submit
+  document.getElementById('booking-form').addEventListener('submit', (e) => {
+    e.preventDefault();
+    if (!validateStep2()) return;
+
+    // Simulate submission (replace with actual endpoint as needed)
+    document.getElementById('booking-form').style.display = 'none';
+    document.querySelector('.form-progress').style.display = 'none';
+    document.getElementById('form-success').classList.add('visible');
+  });
+</script>
+</body>
+</html>
