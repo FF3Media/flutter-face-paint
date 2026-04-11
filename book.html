@@ -79,6 +79,9 @@
       </div>
 
       <form id="booking-form" novalidate>
+        <input type="hidden" name="_subject" value="New Booking Request – Flutter Face Paint">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_template" value="table">
 
         <!-- ── Step 1 ── -->
         <div class="form-step active" id="step-1">
@@ -330,14 +333,36 @@
   document.getElementById('back-btn').addEventListener('click', () => showStep(1));
 
   // Submit
-  document.getElementById('booking-form').addEventListener('submit', (e) => {
+  document.getElementById('booking-form').addEventListener('submit', async (e) => {
     e.preventDefault();
     if (!validateStep2()) return;
 
-    // Simulate submission (replace with actual endpoint as needed)
-    document.getElementById('booking-form').style.display = 'none';
-    document.querySelector('.form-progress').style.display = 'none';
-    document.getElementById('form-success').classList.add('visible');
+    const submitBtn = e.target.querySelector('[type="submit"]');
+    submitBtn.disabled = true;
+    submitBtn.textContent = 'Sending…';
+
+    const form = document.getElementById('booking-form');
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/ff@ff3meda.com', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: data
+      });
+      const json = await res.json();
+      if (json.success === 'true' || json.success === true) {
+        form.style.display = 'none';
+        document.querySelector('.form-progress').style.display = 'none';
+        document.getElementById('form-success').classList.add('visible');
+      } else {
+        throw new Error('Submission failed');
+      }
+    } catch {
+      submitBtn.disabled = false;
+      submitBtn.textContent = 'Send My Booking Request →';
+      alert('Something went wrong. Please email us directly at FitzgeraldMaryam@gmail.com');
+    }
   });
 </script>
 </body>
