@@ -870,6 +870,8 @@ p { max-width: 72ch; }
 .gallery-item:hover { transform: translateY(-4px); box-shadow: var(--shadow-hover); }
 
 .gallery-item__thumb {
+  height: 240px;
+  overflow: hidden;
   width: 100%;
   display: block;
   position: relative;
