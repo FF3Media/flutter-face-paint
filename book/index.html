@@ -65,143 +65,115 @@
 
     <div class="form-wrapper" id="form-wrapper">
 
-      <!-- Progress indicator -->
-      <div class="form-progress" role="progressbar" aria-valuemin="1" aria-valuemax="2" aria-valuenow="1" aria-label="Booking form progress">
-        <div class="form-progress__step active" id="progress-step-1">
-          <span class="form-progress__num">1</span>
-          <span>Event Basics</span>
-        </div>
-        <div class="form-progress__line"></div>
-        <div class="form-progress__step" id="progress-step-2">
-          <span class="form-progress__num">2</span>
-          <span>Event Details</span>
-        </div>
-      </div>
-
       <form id="booking-form" novalidate>
         <input type="hidden" name="_subject" value="New Booking Request – Flutter Face Paint">
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="table">
 
-        <!-- ── Step 1 ── -->
-        <div class="form-step active" id="step-1">
-          <div class="form-step__label">Step 1 of 2 — Your Event Basics</div>
-
-          <div class="form-row">
-            <div class="field">
-              <label for="full_name">Full Name <span class="req" aria-hidden="true">*</span></label>
-              <input type="text" id="full_name" name="full_name" autocomplete="name" required placeholder="Jane Smith">
-              <span class="field__error" id="full_name-error" role="alert">Please enter your full name.</span>
-            </div>
-            <div class="field">
-              <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
-              <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
-              <span class="field__error" id="email-error" role="alert">Please enter a valid email address.</span>
-            </div>
+        <div class="form-row">
+          <div class="field">
+            <label for="full_name">Full Name <span class="req" aria-hidden="true">*</span></label>
+            <input type="text" id="full_name" name="full_name" autocomplete="name" required placeholder="Jane Smith">
+            <span class="field__error" id="full_name-error" role="alert">Please enter your full name.</span>
           </div>
-
-          <div class="form-row">
-            <div class="field">
-              <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
-              <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="613-555-0123">
-              <span class="field__error" id="phone-error" role="alert">Please enter your phone number.</span>
-            </div>
-            <div class="field">
-              <label for="event_type">Type of Event <span class="req" aria-hidden="true">*</span></label>
-              <select id="event_type" name="event_type" required>
-                <option value="" disabled selected>Select event type…</option>
-                <option value="birthday">Birthday Party</option>
-                <option value="corporate">Corporate Event</option>
-                <option value="school">School or Community Event</option>
-                <option value="festival">Festival or Fair</option>
-                <option value="other">Other</option>
-              </select>
-              <span class="field__error" id="event_type-error" role="alert">Please select an event type.</span>
-            </div>
-          </div>
-
-          <div class="form-row">
-            <div class="field">
-              <label for="event_date">Event Date <span class="req" aria-hidden="true">*</span></label>
-              <input type="date" id="event_date" name="event_date" required>
-              <span class="field__error" id="event_date-error" role="alert">Please select your event date.</span>
-            </div>
-            <div class="field">
-              <label for="num_children">Estimated Number of Children <span class="req" aria-hidden="true">*</span></label>
-              <input type="number" id="num_children" name="num_children" min="1" max="500" required placeholder="e.g. 20">
-              <span class="field__error" id="num_children-error" role="alert">Please enter the number of children.</span>
-            </div>
-          </div>
-
-          <div class="form-nav">
-            <button type="button" class="btn btn--violet btn--full" id="next-btn">Next Step →</button>
+          <div class="field">
+            <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" required placeholder="jane@example.com">
+            <span class="field__error" id="email-error" role="alert">Please enter a valid email address.</span>
           </div>
         </div>
 
-        <!-- ── Step 2 ── -->
-        <div class="form-step" id="step-2">
-          <div class="form-step__label">Step 2 of 2 — Event Details</div>
-
-          <div class="form-row">
-            <div class="field">
-              <label for="start_time">Event Start Time <span class="req" aria-hidden="true">*</span></label>
-              <input type="time" id="start_time" name="start_time" required>
-              <span class="field__error" id="start_time-error" role="alert">Please enter the event start time.</span>
-            </div>
-            <div class="field">
-              <label for="duration">Estimated Duration</label>
-              <select id="duration" name="duration">
-                <option value="" disabled selected>Select duration…</option>
-                <option value="1h">1 hour</option>
-                <option value="1.5h">1.5 hours</option>
-                <option value="2h">2 hours</option>
-                <option value="3h">3 hours</option>
-                <option value="4h+">4+ hours</option>
-              </select>
-            </div>
-          </div>
-
+        <div class="form-row">
           <div class="field">
-            <label for="event_address">Full Event Address <span class="req" aria-hidden="true">*</span></label>
-            <input type="text" id="event_address" name="event_address" autocomplete="street-address" required placeholder="123 Main St, Kanata, ON">
-            <span class="field__error" id="event_address-error" role="alert">Please enter the event address.</span>
+            <label for="phone">Phone Number <span class="req" aria-hidden="true">*</span></label>
+            <input type="tel" id="phone" name="phone" autocomplete="tel" required placeholder="613-555-0123">
+            <span class="field__error" id="phone-error" role="alert">Please enter your phone number.</span>
           </div>
-
-          <div class="form-row">
-            <div class="field">
-              <label for="age_range">Age Range of Children</label>
-              <select id="age_range" name="age_range">
-                <option value="" disabled selected>Select age range…</option>
-                <option value="under3">Under 3 years</option>
-                <option value="3-6">3–6 years</option>
-                <option value="6-12">6–12 years</option>
-                <option value="mixed">Mixed ages</option>
-                <option value="adults">Adults welcome too</option>
-              </select>
-            </div>
-            <div class="field">
-              <label for="referral">How did you hear about us?</label>
-              <select id="referral" name="referral">
-                <option value="" disabled selected>Select…</option>
-                <option value="google">Google Search</option>
-                <option value="instagram">Instagram</option>
-                <option value="facebook">Facebook</option>
-                <option value="referral">Friend or Family Referral</option>
-                <option value="returning">Returning Client</option>
-                <option value="other">Other</option>
-              </select>
-            </div>
-          </div>
-
           <div class="field">
-            <label for="special_requests">Event Theme or Special Requests</label>
-            <textarea id="special_requests" name="special_requests" placeholder="e.g. Frozen theme, princess designs, specific characters, brand colours for corporate event…"></textarea>
+            <label for="event_type">Type of Event <span class="req" aria-hidden="true">*</span></label>
+            <select id="event_type" name="event_type" required>
+              <option value="" disabled selected>Select event type…</option>
+              <option value="birthday">Birthday Party</option>
+              <option value="corporate">Corporate Event</option>
+              <option value="school">School or Community Event</option>
+              <option value="festival">Festival or Fair</option>
+              <option value="other">Other</option>
+            </select>
+            <span class="field__error" id="event_type-error" role="alert">Please select an event type.</span>
           </div>
+        </div>
 
-          <div class="form-nav">
-            <button type="button" class="btn btn--outline" id="back-btn" style="flex: 0 0 auto;">← Back</button>
-            <button type="submit" class="btn btn--violet btn--full">Send My Booking Request →</button>
+        <div class="form-row">
+          <div class="field">
+            <label for="event_date">Event Date <span class="req" aria-hidden="true">*</span></label>
+            <input type="date" id="event_date" name="event_date" required>
+            <span class="field__error" id="event_date-error" role="alert">Please select your event date.</span>
           </div>
+          <div class="field">
+            <label for="start_time">Event Start Time <span class="req" aria-hidden="true">*</span></label>
+            <input type="time" id="start_time" name="start_time" required>
+            <span class="field__error" id="start_time-error" role="alert">Please enter the event start time.</span>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="num_children">Estimated Number of Children <span class="req" aria-hidden="true">*</span></label>
+            <input type="number" id="num_children" name="num_children" min="1" max="500" required placeholder="e.g. 20">
+            <span class="field__error" id="num_children-error" role="alert">Please enter the number of children.</span>
+          </div>
+          <div class="field">
+            <label for="duration">Estimated Duration</label>
+            <select id="duration" name="duration">
+              <option value="" disabled selected>Select duration…</option>
+              <option value="1h">1 hour</option>
+              <option value="1.5h">1.5 hours</option>
+              <option value="2h">2 hours</option>
+              <option value="3h">3 hours</option>
+              <option value="4h+">4+ hours</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="event_address">Full Event Address <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="event_address" name="event_address" autocomplete="street-address" required placeholder="123 Main St, Kanata, ON">
+          <span class="field__error" id="event_address-error" role="alert">Please enter the event address.</span>
+        </div>
+
+        <div class="form-row">
+          <div class="field">
+            <label for="age_range">Age Range of Children</label>
+            <select id="age_range" name="age_range">
+              <option value="" disabled selected>Select age range…</option>
+              <option value="under3">Under 3 years</option>
+              <option value="3-6">3–6 years</option>
+              <option value="6-12">6–12 years</option>
+              <option value="mixed">Mixed ages</option>
+              <option value="adults">Adults welcome too</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="referral">How did you hear about us?</label>
+            <select id="referral" name="referral">
+              <option value="" disabled selected>Select…</option>
+              <option value="google">Google Search</option>
+              <option value="instagram">Instagram</option>
+              <option value="facebook">Facebook</option>
+              <option value="referral">Friend or Family Referral</option>
+              <option value="returning">Returning Client</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="special_requests">Event Theme or Special Requests</label>
+          <textarea id="special_requests" name="special_requests" placeholder="e.g. Frozen theme, princess designs, specific characters, brand colours for corporate event…"></textarea>
+        </div>
+
+        <div class="form-nav">
+          <button type="submit" class="btn btn--violet btn--full">Send My Booking Request →</button>
         </div>
 
       </form>
@@ -235,11 +207,7 @@
       <div>
         <div class="footer__logo">🦋 Flutter Face Paint</div>
         <p class="footer__tagline">Bringing Magic to Every Event</p>
-        <div class="footer__socials">
-          <a href="https://instagram.com/flutterfacepaint" class="footer__social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
-          <a href="https://facebook.com/flutterfacepaint" class="footer__social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
-        </div>
-      </div>
+</div>
       <div>
         <h4>Quick Links</h4>
         <nav class="footer__links" aria-label="Footer navigation">
@@ -261,7 +229,7 @@
       </div>
     </div>
     <p class="footer__areas">Flutter Face Paint proudly serves Kanata, Ottawa, Stittsville, Nepean, Barrhaven, Carleton Place, Almonte, Arnprior, Carp, Richmond, and surrounding areas.</p>
-    <div class="footer__bottom">© 2025 Flutter Face Paint. All rights reserved.</div>
+    <div class="footer__bottom">© 2026 Flutter Face Paint. All rights reserved.</div>
   </div>
 </footer>
 
@@ -279,23 +247,6 @@
   const dateInput = document.getElementById('event_date');
   dateInput.min = new Date().toISOString().split('T')[0];
 
-  // Step management
-  const step1 = document.getElementById('step-1');
-  const step2 = document.getElementById('step-2');
-  const progressStep1 = document.getElementById('progress-step-1');
-  const progressStep2 = document.getElementById('progress-step-2');
-  const progressBar = document.querySelector('[role="progressbar"]');
-
-  function showStep(n) {
-    step1.classList.toggle('active', n === 1);
-    step2.classList.toggle('active', n === 2);
-    progressStep1.classList.toggle('active', n === 1);
-    progressStep1.classList.toggle('done', n === 2);
-    progressStep2.classList.toggle('active', n === 2);
-    progressBar.setAttribute('aria-valuenow', n);
-    window.scrollTo({ top: document.querySelector('.form-wrapper').offsetTop - 100, behavior: 'smooth' });
-  }
-
   // Field validation helpers
   function validateField(input) {
     const errorEl = document.getElementById(input.id + '-error');
@@ -306,13 +257,8 @@
     return valid;
   }
 
-  function validateStep1() {
-    const fields = ['full_name', 'email', 'phone', 'event_type', 'event_date', 'num_children'];
-    return fields.map(id => validateField(document.getElementById(id))).every(Boolean);
-  }
-
-  function validateStep2() {
-    const fields = ['start_time', 'event_address'];
+  function validateAll() {
+    const fields = ['full_name', 'email', 'phone', 'event_type', 'event_date', 'start_time', 'num_children', 'event_address'];
     return fields.map(id => validateField(document.getElementById(id))).every(Boolean);
   }
 
@@ -324,18 +270,10 @@
     });
   });
 
-  // Next button
-  document.getElementById('next-btn').addEventListener('click', () => {
-    if (validateStep1()) showStep(2);
-  });
-
-  // Back button
-  document.getElementById('back-btn').addEventListener('click', () => showStep(1));
-
   // Submit
   document.getElementById('booking-form').addEventListener('submit', async (e) => {
     e.preventDefault();
-    if (!validateStep2()) return;
+    if (!validateAll()) return;
 
     const submitBtn = e.target.querySelector('[type="submit"]');
     submitBtn.disabled = true;
@@ -353,7 +291,6 @@
       const json = await res.json();
       if (json.success === 'true' || json.success === true) {
         form.style.display = 'none';
-        document.querySelector('.form-progress').style.display = 'none';
         document.getElementById('form-success').classList.add('visible');
       } else {
         throw new Error('Submission failed');

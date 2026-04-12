@@ -23,7 +23,6 @@
       justify-content: center;
       font-size: 3.5rem;
     }
-    .gallery-item[data-hidden="true"] { display: none; }
   </style>
 </head>
 <body>
@@ -70,45 +69,35 @@
 <section class="section section--white">
   <div class="container">
 
-    <!-- Filter buttons -->
-    <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
-      <button class="gallery-filter-btn active" data-filter="all">All</button>
-      <button class="gallery-filter-btn" data-filter="animals">Animals</button>
-      <button class="gallery-filter-btn" data-filter="fantasy">Fantasy</button>
-      <button class="gallery-filter-btn" data-filter="superheroes">Superheroes</button>
-      <button class="gallery-filter-btn" data-filter="floral">Floral</button>
-      <button class="gallery-filter-btn" data-filter="custom">Custom</button>
-    </div>
-
-    <!-- Masonry grid -->
+    <!-- Gallery grid -->
     <div class="gallery-grid" id="gallery-grid" role="list" aria-label="Gallery designs">
 
       <!-- Animals -->
-      <div class="gallery-item" data-category="animals" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/tiger.png" alt="Tiger face paint by Maryam Fitzgerald — Ottawa face painter" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Tiger</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="animals" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/butterfly.png" alt="Butterfly face paint on a child — Flutter Face Paint, Kanata" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Butterfly</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="animals" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/giraffe.jpg" alt="Giraffe face paint job by Flutter Face Paint" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy">
           <div class="gallery-item__label">Giraffe</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="animals" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/dog.png" alt="Dalmatian puppy face paint on a toddler — Flutter Face Paint Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Puppy</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="animals" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/event2.jpg" alt="Child with face paint at an Ottawa community event" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy">
           <div class="gallery-item__label">Event Fun</div>
@@ -116,25 +105,25 @@
       </div>
 
       <!-- Fantasy -->
-      <div class="gallery-item" data-category="fantasy" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/dragon.png" alt="Dragon face paint design — Flutter Face Paint, Kanata Ontario" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Dragon</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="fantasy" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/princess.jpg" alt="Princess face paint — Flutter Face Paint Ottawa birthday party" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Princess</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="fantasy" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/girl-face-paint.jpg" alt="Fantasy face paint on a girl — Flutter Face Paint" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Fantasy</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="fantasy" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/event3.jpg" alt="Children with fantasy face paint at an Ottawa area event" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy">
           <div class="gallery-item__label">Kids at Events</div>
@@ -142,13 +131,13 @@
       </div>
 
       <!-- Superheroes -->
-      <div class="gallery-item" data-category="superheroes" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/batman.png" alt="Batman superhero face paint — Flutter Face Paint Kanata Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Batman</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="superheroes" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/kids-face-paint.jpg" alt="Children with superhero face paint at a birthday party in Ottawa" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Superhero Party</div>
@@ -156,7 +145,7 @@
       </div>
 
       <!-- Floral -->
-      <div class="gallery-item" data-category="floral" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/artist-at-work.jpg" alt="Maryam painting a floral face design at an Ottawa birthday party" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Floral Design</div>
@@ -164,19 +153,19 @@
       </div>
 
       <!-- Custom -->
-      <div class="gallery-item" data-category="custom" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/event1.jpg" alt="Maryam at her face painting booth — Flutter Face Paint, Kanata" style="width:100%;height:100%;object-fit:cover;object-position:top;display:block;" loading="lazy">
           <div class="gallery-item__label">Maryam at Work</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="custom" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/painting-boy.jpg" alt="Face painting a boy at a birthday party in the Ottawa area" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Custom Design</div>
         </div>
       </div>
-      <div class="gallery-item" data-category="custom" role="listitem">
+      <div class="gallery-item" role="listitem">
         <div class="gallery-item__thumb">
           <img src="/images/festival-face-paint.jpg" alt="Face painting at a festival in Ottawa — Flutter Face Paint" style="width:100%;height:100%;object-fit:cover;display:block;" loading="lazy">
           <div class="gallery-item__label">Festival</div>
@@ -216,11 +205,7 @@
       <div>
         <div class="footer__logo">🦋 Flutter Face Paint</div>
         <p class="footer__tagline">Bringing Magic to Every Event</p>
-        <div class="footer__socials">
-          <a href="https://instagram.com/flutterfacepaint" class="footer__social-btn" aria-label="Instagram" target="_blank" rel="noopener noreferrer">📷</a>
-          <a href="https://facebook.com/flutterfacepaint" class="footer__social-btn" aria-label="Facebook" target="_blank" rel="noopener noreferrer">📘</a>
-        </div>
-      </div>
+</div>
       <div>
         <h4>Quick Links</h4>
         <nav class="footer__links" aria-label="Footer navigation">
@@ -243,7 +228,7 @@
       </div>
     </div>
     <p class="footer__areas">Flutter Face Paint proudly serves Kanata, Ottawa, Stittsville, Nepean, Barrhaven, Carleton Place, Almonte, Arnprior, Carp, Richmond, and surrounding areas.</p>
-    <div class="footer__bottom">© 2025 Flutter Face Paint. All rights reserved.</div>
+    <div class="footer__bottom">© 2026 Flutter Face Paint. All rights reserved.</div>
   </div>
 </footer>
 
@@ -257,44 +242,19 @@
     drawer.classList.toggle('open', !open);
   });
 
-  // Gallery filter
-  const filterBtns = document.querySelectorAll('.gallery-filter-btn');
-  const galleryItems = document.querySelectorAll('.gallery-item');
-
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      const filter = btn.dataset.filter;
-      galleryItems.forEach(item => {
-        const show = filter === 'all' || item.dataset.category === filter;
-        item.style.display = show ? '' : 'none';
-      });
-    });
-  });
-
   // Lightbox
   const lightbox = document.getElementById('lightbox');
   const lightboxContent = document.getElementById('lightbox-content');
   const lightboxClose = document.getElementById('lightbox-close');
+  const galleryItems = document.querySelectorAll('.gallery-item');
 
   galleryItems.forEach(item => {
     item.addEventListener('click', () => {
-      const thumb = item.querySelector('.gallery-item__thumb');
-      lightboxContent.innerHTML = `<div style="
-        width:100%; aspect-ratio:1;
-        background: ${thumb.style.background};
-        display:flex; align-items:center; justify-content:center;
-        font-size:6rem; border-radius: var(--radius-card);
-        position:relative;">
-        ${thumb.querySelector('.gallery-item__label').textContent.trim() !== '' ?
-          `<div style="position:absolute;bottom:0;left:0;right:0;
-           background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);
-           color:#fff;font-family:'Playfair Display',serif;font-size:1.5rem;
-           font-weight:700;padding:2rem 1.5rem 1.25rem;border-radius:0 0 var(--radius-card) var(--radius-card);">
-           ${thumb.querySelector('.gallery-item__label').textContent}
-           </div>` : ''}
-        ${thumb.innerText.trim().charAt(0)}
+      const img = item.querySelector('img');
+      const label = item.querySelector('.gallery-item__label');
+      lightboxContent.innerHTML = `<div style="position:relative;max-width:90vw;max-height:85vh;border-radius:var(--radius-card);overflow:hidden;">
+        <img src="${img.src}" alt="${img.alt}" style="display:block;max-width:90vw;max-height:85vh;object-fit:contain;">
+        ${label ? `<div style="position:absolute;bottom:0;left:0;right:0;background:linear-gradient(to top,rgba(0,0,0,0.6),transparent);color:#fff;font-family:'Playfair Display',serif;font-size:1.25rem;font-weight:700;padding:2rem 1.5rem 1rem;border-radius:0 0 var(--radius-card) var(--radius-card);">${label.textContent}</div>` : ''}
       </div>`;
       lightbox.classList.add('open');
       document.body.style.overflow = 'hidden';
