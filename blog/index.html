@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Face Painting Tips & Ideas Blog | Flutter Face Paint Ottawa</title>
+  <meta name="description" content="Face painting tips, design ideas, party planning advice and behind-the-scenes stories from Maryam Fitzgerald — Ottawa's favourite face painter.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦋</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+  <meta property="og:title" content="Face Painting Tips & Ideas Blog | Flutter Face Paint Ottawa">
+  <meta property="og:description" content="Face painting tips, design ideas, and party planning advice from Ottawa's favourite face painter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://flutterfacepaint.com/blog/">
+  <meta property="og:image" content="https://flutterfacepaint.com/og-image.jpg">
+  <style>
+    .blog-empty {
+      text-align: center;
+      padding: 5rem 1.5rem;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+    .blog-empty__icon {
+      font-size: 4rem;
+      margin-bottom: 1.5rem;
+      line-height: 1;
+    }
+    .blog-empty__title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: 1.75rem;
+      color: var(--charcoal);
+      margin-bottom: 1rem;
+    }
+    .blog-empty__text {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+    .blog-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+    .blog-topics__chip {
+      background: rgba(124,58,237,0.08);
+      color: var(--violet);
+      border: 1px solid rgba(124,58,237,0.18);
+      border-radius: var(--radius-pill);
+      padding: 0.35rem 0.9rem;
+      font-size: 0.82rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="Main navigation">
+  <div class="navbar__inner">
+    <a href="/" class="navbar__logo">🦋 Flutter Face Paint</a>
+    <ul class="navbar__links" role="list">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about/">About</a></li>
+      <li><a href="/gallery/">Gallery</a></li>
+      <li><a href="/services/">Services</a></li>
+      <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/blog/" class="active" aria-current="page">Blog</a></li>
+      <li><a href="/faq/">FAQ</a></li>
+      <li><a href="/book/" class="navbar__cta">Book Now</a></li>
+    </ul>
+    <button class="navbar__hamburger" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-drawer">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="navbar__drawer" id="mobile-drawer" role="menu">
+    <a href="/" role="menuitem">Home</a>
+    <a href="/about/" role="menuitem">About</a>
+    <a href="/gallery/" role="menuitem">Gallery</a>
+    <a href="/services/" role="menuitem">Services</a>
+    <a href="/reviews/" role="menuitem">Reviews</a>
+    <a href="/blog/" class="active" role="menuitem">Blog</a>
+    <a href="/faq/" role="menuitem">FAQ</a>
+    <a href="/book/" class="drawer-cta" role="menuitem">Book Now</a>
+  </div>
+</nav>
+
+<main>
+
+<!-- ── Hero ── -->
+<section class="hero--gradient" aria-label="Blog hero">
+  <div class="container">
+    <p class="eyebrow" style="color: rgba(255,255,255,0.7);">Tips, Ideas & Stories</p>
+    <h1 style="margin: 0.5rem 0 1rem;">The Flutter Face Paint Blog</h1>
+    <p>Face painting inspiration, party tips, and behind-the-scenes from Maryam's easel.</p>
+  </div>
+</section>
+
+<!-- ── Coming Soon ── -->
+<section class="section section--white">
+  <div class="container">
+    <div class="blog-empty">
+      <div class="blog-empty__icon">✍️</div>
+      <h2 class="blog-empty__title">Articles Coming Soon</h2>
+      <p class="blog-empty__text">
+        Maryam is busy painting — but posts are on the way! Expect tips on choosing face paint designs for parties, what to expect at your first face painting event, seasonal inspiration, and more.
+      </p>
+      <div class="blog-topics" aria-label="Upcoming topics">
+        <span class="blog-topics__chip">Birthday Party Tips</span>
+        <span class="blog-topics__chip">Design Ideas</span>
+        <span class="blog-topics__chip">Behind the Scenes</span>
+        <span class="blog-topics__chip">Seasonal Looks</span>
+        <span class="blog-topics__chip">Safety & Ingredients</span>
+        <span class="blog-topics__chip">Ottawa Events</span>
+      </div>
+      <a href="/book/" class="btn btn--violet btn--lg">Book Maryam in the Meantime</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── CTA Banner ── -->
+<section class="cta-banner" aria-label="Call to action">
+  <div class="container">
+    <h2>Ready to make your event unforgettable?</h2>
+    <a href="/book/" class="btn btn--white btn--lg">Book Maryam</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer__grid">
+      <div>
+        <div class="footer__logo">🦋 Flutter Face Paint</div>
+        <p class="footer__tagline">Bringing Magic to Every Event</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <nav class="footer__links" aria-label="Footer navigation">
+          <a href="/">Home</a>
+          <a href="/about/">About Maryam</a>
+          <a href="/gallery/">Gallery</a>
+          <a href="/services/">Services</a>
+          <a href="/birthday-parties/">Birthday Parties</a>
+          <a href="/corporate-events/">Corporate Events</a>
+          <a href="/reviews/">Reviews</a>
+          <a href="/blog/">Blog</a>
+          <a href="/faq/">FAQ</a>
+          <a href="/book/">Book Now</a>
+        </nav>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p class="footer__contact-item">📧 <a href="mailto:FitzgeraldMaryam@gmail.com">FitzgeraldMaryam@gmail.com</a></p>
+        <p class="footer__contact-item">📞 <a href="tel:5148170253">514-817-0253</a></p>
+        <p class="footer__contact-item">🌐 <a href="https://flutterfacepaint.com">flutterfacepaint.com</a></p>
+      </div>
+    </div>
+    <p class="footer__areas">Flutter Face Paint proudly serves Kanata, Ottawa, Stittsville, Nepean, Barrhaven, Carleton Place, Almonte, Arnprior, Carp, Richmond, and surrounding areas.</p>
+    <div class="footer__bottom">© 2026 Flutter Face Paint. All rights reserved.</div>
+  </div>
+</footer>
+
+<script>
+  const hamburger = document.querySelector('.navbar__hamburger');
+  const drawer = document.querySelector('.navbar__drawer');
+  hamburger.addEventListener('click', () => {
+    const open = hamburger.getAttribute('aria-expanded') === 'true';
+    hamburger.setAttribute('aria-expanded', String(!open));
+    drawer.classList.toggle('open', !open);
+  });
+</script>
+</body>
+</html>

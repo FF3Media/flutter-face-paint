@@ -27,6 +27,7 @@
       <li><a href="/gallery/">Gallery</a></li>
       <li><a href="/services/">Services</a></li>
       <li><a href="/reviews/">Reviews</a></li>
+      <li><a href="/blog/">Blog</a></li>
       <li><a href="/faq/">FAQ</a></li>
       <li><a href="/book/" class="navbar__cta active" aria-current="page">Book Now</a></li>
     </ul>
@@ -40,6 +41,7 @@
     <a href="/gallery/" role="menuitem">Gallery</a>
     <a href="/services/" role="menuitem">Services</a>
     <a href="/reviews/" role="menuitem">Reviews</a>
+    <a href="/blog/" role="menuitem">Blog</a>
     <a href="/faq/" role="menuitem">FAQ</a>
     <a href="/book/" class="drawer-cta" role="menuitem">Book Now</a>
   </div>
@@ -111,66 +113,21 @@
             <span class="field__error" id="event_date-error" role="alert">Please select your event date.</span>
           </div>
           <div class="field">
-            <label for="start_time">Event Start Time <span class="req" aria-hidden="true">*</span></label>
-            <input type="time" id="start_time" name="start_time" required>
-            <span class="field__error" id="start_time-error" role="alert">Please enter the event start time.</span>
-          </div>
-        </div>
-
-        <div class="form-row">
-          <div class="field">
-            <label for="num_children">Estimated Number of Children <span class="req" aria-hidden="true">*</span></label>
+            <label for="num_children">Estimated Number of Guests <span class="req" aria-hidden="true">*</span></label>
             <input type="number" id="num_children" name="num_children" min="1" max="500" required placeholder="e.g. 20">
-            <span class="field__error" id="num_children-error" role="alert">Please enter the number of children.</span>
-          </div>
-          <div class="field">
-            <label for="duration">Estimated Duration</label>
-            <select id="duration" name="duration">
-              <option value="" disabled selected>Select duration…</option>
-              <option value="1h">1 hour</option>
-              <option value="1.5h">1.5 hours</option>
-              <option value="2h">2 hours</option>
-              <option value="3h">3 hours</option>
-              <option value="4h+">4+ hours</option>
-            </select>
+            <span class="field__error" id="num_children-error" role="alert">Please enter the number of guests.</span>
           </div>
         </div>
 
         <div class="field">
-          <label for="event_address">Full Event Address <span class="req" aria-hidden="true">*</span></label>
+          <label for="event_address">Event Location / City <span class="req" aria-hidden="true">*</span></label>
           <input type="text" id="event_address" name="event_address" autocomplete="street-address" required placeholder="123 Main St, Kanata, ON">
-          <span class="field__error" id="event_address-error" role="alert">Please enter the event address.</span>
-        </div>
-
-        <div class="form-row">
-          <div class="field">
-            <label for="age_range">Age Range of Children</label>
-            <select id="age_range" name="age_range">
-              <option value="" disabled selected>Select age range…</option>
-              <option value="under3">Under 3 years</option>
-              <option value="3-6">3–6 years</option>
-              <option value="6-12">6–12 years</option>
-              <option value="mixed">Mixed ages</option>
-              <option value="adults">Adults welcome too</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="referral">How did you hear about us?</label>
-            <select id="referral" name="referral">
-              <option value="" disabled selected>Select…</option>
-              <option value="google">Google Search</option>
-              <option value="instagram">Instagram</option>
-              <option value="facebook">Facebook</option>
-              <option value="referral">Friend or Family Referral</option>
-              <option value="returning">Returning Client</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
+          <span class="field__error" id="event_address-error" role="alert">Please enter the event location.</span>
         </div>
 
         <div class="field">
-          <label for="special_requests">Event Theme or Special Requests</label>
-          <textarea id="special_requests" name="special_requests" placeholder="e.g. Frozen theme, princess designs, specific characters, brand colours for corporate event…"></textarea>
+          <label for="special_requests">Anything else we should know?</label>
+          <textarea id="special_requests" name="special_requests" placeholder="Event theme, specific designs, brand colours, accessibility needs…"></textarea>
         </div>
 
         <div class="form-nav">
@@ -259,7 +216,7 @@
   }
 
   function validateAll() {
-    const fields = ['full_name', 'email', 'phone', 'event_type', 'event_date', 'start_time', 'num_children', 'event_address'];
+    const fields = ['full_name', 'email', 'phone', 'event_type', 'event_date', 'num_children', 'event_address'];
     return fields.map(id => validateField(document.getElementById(id))).every(Boolean);
   }
 
